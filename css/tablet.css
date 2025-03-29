@@ -1,0 +1,18 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .topnav .profile-pic-container {
+    display: none;
+  }
+
+  .info-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .details-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
