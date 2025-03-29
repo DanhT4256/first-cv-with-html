@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link
+      rel="stylesheet"
+      href="./css/laptop.css"
+      media="screen and (min-width: 1024px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/tablet.css"
+      media="screen and (min-width: 768px) and (max-width: 1023px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/mobile.css"
+      media="screen and (max-width: 767px)"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Assignment03</title>
+  </head>
+  <body>
+    <!-- Phần 1 - Banner -->
+    <div class="container">
+      <img src="images/banner.jpg" alt="banner" style="width: 100%" />
+      <div class="centered">
+        <strong>TRƯƠNG THÀNH DANH</strong>
+        <p>Junior Software Engineer</p>
+      </div>
+    </div>
+
+    <!-- Phần 2 - Navbar -->
+    <nav class="topnav">
+      <ul>
+        <li>
+          <a href="#Thông tin"><i class="icon-user"></i>Thông tin</a>
+        </li>
+        <li>
+          <a href="#Lý Lịch"><i class="icon-doc-text-inv"></i>Lý Lịch</a>
+        </li>
+        <li class="profile-pic-container">
+          <img
+            src="images/default-avatar.webp"
+            alt="Avatar"
+            class="profile-pic"
+          />
+        </li>
+        <li>
+          <a href="#Chứng Chỉ"><i class="icon-mail-alt"></i>Chứng Chỉ</a>
+        </li>
+        <li>
+          <a href="#Dự Án"><i class="icon-star-1"></i>Dự Án</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Phần 3 - Mục Thông tin -->
+    <div class="info-container">
+      <div class="info-item-left">
+        <h2>Mục tiêu nghề nghiệp</h2>
+        <p>
+          Tôi mong muốn phát triển sự nghiệp của mình bằng cách tận dụng chuyên
+          môn trong phân tích dữ liệu, mô hình hóa thống kê và trực quan hóa dữ
+          liệu. Mục tiêu của tôi là không ngừng mở rộng kiến thức, luôn cập nhật
+          xu hướng ngành và đóng góp vào các dự án đổi mới trong một môi trường
+          năng động.
+        </p>
+      </div>
+
+      <div id="form-container">
+        <h3>Nhập Email để xem thông tin cá nhân</h3>
+        <input type="email" id="email-input" placeholder="Nhập email của bạn" />
+        <button id="submit-btn">Xác nhận</button>
+        <p id="error-message"></p>
+      </div>
+
+      <div class="info-item-right hide">
+        <h2>Thông tin cá nhân</h2>
+        <ul>
+          <li><strong>Ngày sinh:</strong> 17/04/1997</li>
+          <li><strong>Giới tính:</strong> Nam</li>
+          <li><strong>Điện thoại:</strong> 0977 895 968</li>
+          <li><strong>Email:</strong> danhtruong1704@gmail.com</li>
+          <li><strong>Địa chỉ:</strong> Phường 13, Quận Bình Thạnh</li>
+          <li>
+            <strong>Website:</strong><a href="#"> https://myownwebsite.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Phần 4 - Mục lý lịch -->
+    <div class="details-container">
+      <!-- Kinh nghiệm-->
+      <div class="box">
+        <!-- Tiêu đề 75% + 25% -->
+        <div class="box-header">
+          <div class="box-title">Kinh nghiệm</div>
+          <div class="box-icon"><i class="icon-briefcase"></i></div>
+          <button class="view-more-btn hide">View More</button>
+        </div>
+
+        <div class="box-content hide">
+          <div class="job">
+            <h3>CTY TNHH TRUYỀN THÔNG TÙNG VIỆT</h3>
+            <span
+              ><strong>Vị trí:</strong> Marketing, Sáng tạo nội dung, Hỗ trợ
+              sale, Kỹ thuật viên</span
+            >
+            <ul>
+              <li>
+                Tạo và quản lý nội dung trên các trang fanpage của công ty.
+              </li>
+              <li>
+                Tập huấn và hướng dẫn khách hàng sử dụng phần mềm và sản phẩm
+                của công ty.
+              </li>
+              <li>
+                Thu thập dữ liệu từ chiến dịch nội dung tiếp thị: số lượng đăng
+                ký mới, số lượng kích hoạt mới,... từ đó tổng hợp dữ liệu để
+                phòng kinh doanh và tiếp thị đưa ra chiến lược tiếp theo.
+              </li>
+              <li>
+                Phối hợp giữa phòng sáng tạo và phòng tiếp thị để quảng bá sản
+                phẩm.
+              </li>
+              <li>
+                Xử lý và giải quyết các thắc mắc và vấn đề của khách hàng.
+              </li>
+              <li>Hỗ trợ xem xét, soạn thảo và dịch hợp đồng.</li>
+              <li>Thiết lập và chạy các sự kiện quảng bá của khách hàng.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Học vấn-->
+      <div class="box">
+        <div class="box-header">
+          <div class="box-title">Học vấn</div>
+          <div class="box-icon"><i class="ic-pencil"></i></div>
+          <button class="view-more-btn hide">View More</button>
+        </div>
+
+        <div class="box-content hide">
+          <div class="education">
+            <div class="edu-item">
+              <strong>Trường Đại học Luật TP. Hồ Chí Minh</strong>
+              <p>2015 - 2019</p>
+              <p>- Cử nhân Ngôn ngữ Anh - Chuyên ngành Anh văn Pháp lý</p>
+            </div>
+
+            <div class="edu-item">
+              <strong>FUNiX</strong>
+              <p>2025 - Hiện tại</p>
+              <p>- Chứng chỉ Kỹ sư phần mềm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hoạt động-->
+      <div class="box">
+        <div class="box-header">
+          <div class="box-title">Hoạt động</div>
+          <div class="box-icon"><i class="ic-telescope"></i></div>
+          <button class="view-more-btn hide">View More</button>
+        </div>
+        <div class="box-content hide">
+          <div class="acivity">
+            <div class="acivity-item">
+              <strong>Câu lạc bộ cầu lông quận Bình Thạnh</strong>
+              <p>2007 - 2020</p>
+              <p>- Giải ba đôi nam Giải cầu lông cấp thành phố 2012</p>
+            </div>
+
+            <div class="acivity-item">
+              <strong>Thư ký ban cán bộ lớp Anh Văn Pháp lý K40</strong>
+              <p>2015 - 2017</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sở thích-->
+      <div class="box">
+        <div class="box-header">
+          <div class="box-title">Sở thích</div>
+          <div class="box-icon"><i class="ic-telescope"></i></div>
+          <button class="view-more-btn hide">View More</button>
+        </div>
+        <div class="box-content hide">
+          <div class="hobby">
+            <div class="hobby-item">
+              <div class="hobby-icon"><i class="ic-strategy"></i></div>
+              <div class="hobby-name">Chơi game</div>
+            </div>
+            <div class="hobby-item">
+              <div class="hobby-icon"><i class="ic-tools"></i></div>
+              <div class="hobby-name">Ráp mô hình</div>
+            </div>
+            <div class="hobby-item">
+              <div class="hobby-icon"><i class="ic-telescope"></i></div>
+              <div class="hobby-name">Khám phá, tìm đọc thông tin</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Ngôn ngữ-->
+      <div class="box">
+        <div class="box-header">
+          <div class="box-title">Ngôn ngữ</div>
+          <div class="box-icon"><i class="ic-telescope"></i></div>
+          <button class="view-more-btn hide">View More</button>
+        </div>
+        <div class="box-content hide">
+          <div class="language">
+            <div class="language-item">
+              <strong>Tiếng Anh - IELTS 7.0</strong>
+              <div class="rating">
+                <span class="filled"></span>
+                <span class="filled"></span>
+                <span class="filled"></span>
+              </div>
+            </div>
+            <div class="language-item">
+              <strong>Tiếng Đức</strong>
+              <div class="rating">
+                <span class="filled"></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Kỹ năng-->
+      <div class="box">
+        <div class="box-header">
+          <div class="box-title">Kỹ năng</div>
+          <div class="box-icon"><i class="ic-telescope"></i></div>
+          <button class="view-more-btn hide">View More</button>
+        </div>
+        <div class="box-content hide">
+          <div class="language">
+            <div class="language-item">
+              <strong>SQL, Python, PowerBI</strong>
+              <div class="rating">
+                <span class="filled"></span>
+                <span class="filled"></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="language-item">
+              <strong>Ngôn ngữ</strong>
+              <div class="rating">
+                <span class="filled"></span>
+                <span class="filled"></span>
+                <span class="filled"></span>
+              </div>
+            </div>
+            <div class="language-item">
+              <strong>Tin học văn phòng</strong>
+              <div class="rating">
+                <span class="filled"></span>
+                <span class="filled"></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phần 5 - Chứng chỉ -->
+
+    <div class="certificate">
+      <h2>CHỨNG CHỈ - GIẢI THƯỞNG</h2>
+      <div class="certificate-container">
+        <div class="certificate-item">
+          <img src="images/Cert_DBI.png" alt="Chứng chỉ 1" />
+        </div>
+
+        <div class="certificate-item">
+          <img src="images/Cert_PRF.png" alt="Chứng chỉ 2" />
+        </div>
+
+        <div class="certificate-item">
+          <img src="images/Cert_WEB.png" alt="Chứng chỉ 3" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Phần 6 - Dự án -->
+    <div class="project">
+      <h2>DỰ ÁN</h2>
+      <div class="project-container">
+        <div class="project-item">
+          <img src="images/project_1.png" alt="pro1" />
+          <div class="project-title">CV CÁ NHÂN</div>
+          <div class="project-info">
+            <span class="badge">2025</span> | <span>FUNiX</span> |
+            <span>💡 Developer</span>|<span>
+              <a href="Project Charter.html" class="btn_charter">
+                Project Charter
+              </a>
+            </span>
+          </div>
+          <table>
+            <tr>
+              <th>Mô tả</th>
+              <td>
+                Trang web CV cá nhân online, cung cấp thông tin cá nhân cũng như
+                Kỹ năng nghệ nghiệp.
+              </td>
+            </tr>
+            <tr>
+              <th>Nhiệm vụ</th>
+              <td>Phát triển code - Review code</td>
+            </tr>
+            <tr>
+              <th>Công nghệ</th>
+              <td>HTML, CSS</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="project-item">
+          <img src="images/project_2.png" alt="pro2" />
+          <div class="project-title">TRANG WEB QUẢN LÝ THÚ CƯNG</div>
+          <div class="project-info">
+            <span class="badge">2025</span> | <span>FUNiX</span> |
+            <span>💡 Developer</span>|<span>
+              <a href="Project Charter.html" class="btn_charter">
+                Project Charter
+              </a>
+            </span>
+          </div>
+          <table>
+            <tr>
+              <th>Mô tả</th>
+              <td>
+                Ứng dụng giúp quản lý các thông tin của thú cưng như: cân nặng,
+                giống, tình trạng tiêm chủng, ... Bao gồm các chức năng
+                thêm/sửa/xóa
+              </td>
+            </tr>
+            <tr>
+              <th>Nhiệm vụ</th>
+              <td>Phát triển code - Review code - Tối ưu code - Xử lý lỗi</td>
+            </tr>
+            <tr>
+              <th>Công nghệ</th>
+              <td>HTML, CSS, JavaScript</td>
+            </tr>
+          </table>
+        </div>
+        <div class="project-item">
+          <img src="images/project_3.png" alt="pro3" />
+          <div class="project-title">TRANG WEB XEM TIN TỨC</div>
+          <div class="project-info">
+            <span class="badge">2025</span> | <span>FUNiX</span> |
+            <span>💡 Developer</span>|<span>
+              <a href="Project Charter.html" class="btn_charter">
+                Project Charter
+              </a>
+            </span>
+          </div>
+          <table>
+            <tr>
+              <th>Mô tả</th>
+              <td>
+                Trang web xem tin tức từ nhiều nguồn khác nhau, người dùng có
+                thể tìm kiếm các tin tức dựa theo từ khóa.
+              </td>
+            </tr>
+            <tr>
+              <th>Nhiệm vụ</th>
+              <td>Phát triển code - Review code - Tối ưu code - Xử lý lỗi</td>
+            </tr>
+            <tr>
+              <th>Công nghệ</th>
+              <td>HTML, CSS</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <a href="https://www.facebook.com" target="_blank" class="social-link">
+          <i class="icon-facebook"></i>
+          <span>Facebook</span>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" class="social-link">
+          <i class="icon-linkedin"></i>
+          <span>Linkedin</span>
+        </a>
+        <a href="https://github.com" target="_blank" class="social-link">
+          <i class="icon-github-circled"></i>
+          <span>Github</span>
+        </a>
+      </div>
+    </footer>
+    <script src="/js.script/script.js"></script>
+  </body>
+</html>
